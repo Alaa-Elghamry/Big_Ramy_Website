@@ -1,0 +1,78 @@
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(30, 30, 30);
+  color: rgb(255, 255, 255);
+  padding-left: 16px;
+  padding-right: 16px;
+  height: 40px;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+
+.nav a:link,
+.nav a:visited, .signNav a:link,.signNav a:visited {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+/* CSS Modules feature */
+.nav a:global(.active) {
+  color: var(--color-secondary);
+}
+
+a.ctaLink:link,
+a.ctaLink:visited {
+  background-color: var(--color-secondary);
+  color: var(--color-gray--0);
+  padding: 0.8rem 2rem;
+  border-radius: 7px;
+}
+
+.signNav {
+  width: 100%;
+  margin: 8px auto;
+  box-sizing: border-box;
+  display: block;
+  padding-left: 16px;
+  padding-right: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.langNav {
+  width: 100%;
+  margin-left: auto;
+  box-sizing: border-box;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+ display: block;
+ border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.langNavDiv {
+  display: flex;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  justify-content: center;
+  align-items: flex-end;
+  height: 40px;
+
+}
+
+.langNavDiv span {
+  font-family: Barlow;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5;
+}
